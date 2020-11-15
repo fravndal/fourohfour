@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./../css/header.css"
 
 const Header = () => {
   return (
@@ -7,10 +8,9 @@ const Header = () => {
 
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
- 
+
   <a class="navbar-brand" href="#">Logo</a>
 
-  
   <ul class="navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="#">Link s1</a>
@@ -19,7 +19,7 @@ const Header = () => {
       <a class="nav-link" href="#">Link fuck</a>
     </li>
 
-    
+
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
         Dropdown link
@@ -39,8 +39,6 @@ const Header = () => {
   </form>
 </nav>
 </nav>
-
-
 
     </React.Fragment>
   );
