@@ -4,20 +4,20 @@ version: '3'
 services:
   backend:
     build:
-      context: ./fourohfour_backend
+      context: ./backend/project/
       args:
         DJANGO_ALLOWED_HOSTS: '*'
         DJANGO_SECRET_KEY: '*'
         DJANGO_CORS_ORIGIN_WHITELIST: '*'
-    command: gunicorn fourohfour_backend.wsgi --bind 0.0.0.0:8000
+    command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
   frontend:
     build:
-      context: ./fourohfour_frontend
+      context: ./frontend
     volumes:
       - build_folder:/frontend/build
-    ports: 
+    ports:
        - "3000:3000"
   nginx:
     image: nginx:latest

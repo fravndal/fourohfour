@@ -1,8 +1,19 @@
+# pull official base image
 FROM node:14.4.0-alpine3.10
-USER root
+
+# set working directory
 WORKDIR /frontend
-COPY package.json /frontend
-RUN yarn install
-COPY . /frontend
-EXPOSE 3000
-CMD ["yarn", "run", "start"]
+
+# add '/frontend/node_modules/.bin' to $PATH
+ENV PATH /frontend/node_modules/.bin:$PATH
+
+# install app dependencies
+COPY package.json ./
+RUN yarn install --silent
+RUN yarn global add react-scripts@3.4.1 --silent
+
+# add app
+COPY . ./
+
+# start app
+CMD ["yarn", "start"]
