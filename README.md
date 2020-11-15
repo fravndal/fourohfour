@@ -10,3 +10,9 @@ nginx for production server
     cd fourohfour
     docker-compose build
     docker-compose up -d
+
+### Frontend url
+`localhost:3000`
+
+### Backend url
+`localhost:8000/graphql`
