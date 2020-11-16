@@ -7,7 +7,7 @@ const Frontpage = props => {
             
             <div className="container">
                 <div className="col-md-12">
-                    <h1>Frontpage</h1>
+                    <h1 className="text-center">Frontpage</h1>
                 </div>
             </div>
         </React.Fragment>
