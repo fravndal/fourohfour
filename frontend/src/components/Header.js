@@ -15,7 +15,7 @@ const Header = () => {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto" style={{paddingLeft: "18em"}}>
         <li class="nav-item">
-                <a class="nav-link text-light" href="#">Home</a>
+                <a class="nav-link text-light" href="#">Link</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-light" href="#">Link</a>
