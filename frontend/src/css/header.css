@@ -1,5 +1,7 @@
 .logo {
 
+    opacity: 100%;
+
     animation-name: spin;
     animation-duration: 3s;
 
@@ -15,4 +17,4 @@
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg);} }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes spin { 0% {opacity: 0%;} 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); opacity: 100%;} }
