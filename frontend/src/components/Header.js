@@ -1,44 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./../css/header.css"
+import {Nav, NavDropdown, Navbar, Form, FormControl, Button} from "react-bootstrap";
 
 const Header = () => {
   return (
     <React.Fragment>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand mr-5" href=""><img className="logo" src="cslogo.png" height="40px" width="40px"></img></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto" style={{paddingLeft: "18em"}}>
-        <li class="nav-item">
-                <a class="nav-link text-light" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-        </ul>
-        
-        <a className="steam_login" style={{textDecoration: "none", color: "white"}} class="nav-link" href="#">Login with <strong>STEAM</strong></a>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-        </form>
-    </div>
-</nav>
+<Navbar bg="light" expand="lg">
+<img className="logo" src="cslogo.png" width="40px" height="40px"></img>
+  <Navbar.Brand href="#home" className="pl-2" id="nav-brand"><strong>CS STATS</strong></Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav id="nav-center" className="mr-auto mx-auto">
+      <Nav.Link href="#link">About</Nav.Link>
+      <NavDropdown title="Tips and info" id="basic-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">Weapon stats</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.2">Nade tips</NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
+    <Form inline>
+      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+      <Button id="searchButton" variant="outline-success">Search</Button>
+    </Form>
+  </Navbar.Collapse>
+</Navbar>
 
     </React.Fragment>
   );

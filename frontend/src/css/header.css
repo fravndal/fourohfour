@@ -15,6 +15,27 @@
 
 }
 
+#nav-center {
+    padding-left: 3.7em;
+}
+
+ /* button hide on desktop, visible on phones/tablets */
+@media screen and (min-width: 768px) {
+    #searchButton {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #searchButton {
+        display: initial;
+        margin-top: .5em;
+        width: 100%;
+    }
+
+}
+
+/* keyframes/animations for .logo class */
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg);} }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 0% {opacity: 0%;} 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); opacity: 100%;} }
