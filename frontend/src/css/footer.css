@@ -4,7 +4,19 @@
     bottom: 0;
 }
 
+#foot_name {
+    color: rgb(190, 73, 190);
+    text-decoration: none;
+}
+
 @media screen and (max-width: 767px){
+    #footer-container {
+        position: sticky;
+        bottom: auto;
+    }
+}
+
+@media screen and (max-height: 670px){
     #footer-container {
         position: sticky;
         bottom: auto;

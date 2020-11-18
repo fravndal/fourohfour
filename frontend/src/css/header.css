@@ -31,6 +31,10 @@ strong {
     left: .4em;
 }
 
+#navbar {
+    box-shadow: 0px 0px 10px #dadada;
+}
+
 #nav-center {
     font-size: 1.2em;
     position: relative;
