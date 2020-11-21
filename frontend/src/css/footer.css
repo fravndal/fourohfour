@@ -22,3 +22,34 @@
         bottom: auto;
     }
 }
+
+@media screen and (min-height: 670px) and (min-width: 900px) {
+    #footer-container {
+        position: static;
+        bottom: 0;
+    }
+}
+
+/* Phones */
+@media screen and (min-height: 680px){
+    #footer-container {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+/* Laptops */
+@media screen and (min-height: 850px){
+    #footer-container {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+/* Tablet */
+@media screen and (min-height: 680px) and (width: 768px){
+    #footer-container {
+        position: fixed;
+        bottom: 0;
+    }
+}
