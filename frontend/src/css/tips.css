@@ -1,15 +1,30 @@
 #image, #image2 {
     box-shadow: 7px 7px 10px .5px #242424;
     transition: transform .7s;
-    border-radius: 0;
+    animation-name: loadToFade;
+    animation-duration: 2s;
 }
 
 #image:hover {
     opacity: 70%;
     transform: rotate(3deg) scale(1.05);
+
+    /* removes rugged edges when image is transformed */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 #image2:hover {
     opacity: 70%;
     transform: rotate(-3deg) scale(1.05);
+
+    /* removes rugged edges when image is transformed */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
+
+@keyframes loadToFade {
+    0% {opacity: 40%;}
+    100% {opacity: 100%;}
+}
+
