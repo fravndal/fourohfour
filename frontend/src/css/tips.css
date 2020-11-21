@@ -1,0 +1,16 @@
+#tips-image, #tips-image2 {
+    box-shadow: 7px 7px 10px .5px #242424;
+    transition: transform .5s;
+    border-radius: 0;
+}
+
+#tips-image:hover {
+    opacity: 50%;
+    transform: rotate(3deg) scale(1.05);
+}
+
+#tips-image2:hover {
+    opacity: 50%;
+    transform: rotate(-3deg) scale(1.05);
+    content: "hei";
+}

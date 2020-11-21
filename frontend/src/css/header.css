@@ -36,9 +36,9 @@ strong {
 }
 
 #nav-center {
-    font-size: 1.2em;
+    font-size: 1.1em;
     position: relative;
-    left: -100px;
+    left: -76px;
 }
 
 @media screen and (max-width: 991px){
