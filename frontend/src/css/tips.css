@@ -1,3 +1,7 @@
+#container {
+    margin-top: 4.5em;
+}
+
 #image, #image2 {
     box-shadow: 7px 7px 10px .5px #242424;
     transition: transform .7s;
@@ -5,10 +9,15 @@
     animation-duration: 2s;
 }
 
+#imageDisabled {
+    opacity: 50%;
+    box-shadow: 7px 7px 10px .5px #242424;
+}
+
 #image:hover {
     opacity: 70%;
     transform: rotate(3deg) scale(1.05);
-
+    
     /* removes rugged edges when image is transformed */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -26,5 +35,11 @@
 @keyframes loadToFade {
     0% {opacity: 40%;}
     100% {opacity: 100%;}
+}
+
+@media screen and (max-height: 800px) {
+    #container {
+        margin-top: 0em;
+    }
 }
 
