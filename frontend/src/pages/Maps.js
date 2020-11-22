@@ -1,15 +1,34 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { useQuery } from "@apollo/client";
+import { GET_MAPS } from "../queries/GetMaps";
+import ErrorHandler from "./../components/common/ErrorHandler";
 import { Col, Container, Row, Image } from "react-bootstrap";
-import "./../css/tips.css";
+import "./../css/maps.css";
 
 
 
-const Header = () => {
+const Maps = () => {
+  const { data, loading, error } = useQuery(GET_MAPS);
+
+  // if (loading)
+  //   return (
+  //     <Container className="container">
+  //       <Container className="loader-frame">
+  //
+  //       </Container>
+  //     </Container>
+  //   );
+  // if (error)
+  //   return (
+  //     <Container className="container">
+  //       <ErrorHandler errorMessage={`${error}`} />
+  //     </Container>
+  //   );
   return (
-    <React.Fragment>
+    <Fragment>
 
         <Container id="container">
-            <Row className="d-flex text-center">  
+            <Row className="d-flex text-center">
                 <Col lg={4} md={4} sm={15} xl={4} xs={"auto"} className="mt-5">
                     <a href="/">
                         <Image className="ims" id="image" height="100%" width="80%" src="images/csmaps/train.jpg" rounded/>
@@ -64,8 +83,8 @@ const Header = () => {
 
         </Container>
 
-    </React.Fragment>
+    </Fragment>
   );
 };
 
-export default Header;
+export default Maps;
