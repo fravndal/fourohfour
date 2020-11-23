@@ -12,7 +12,7 @@ const Frontpage = props => {
                     <Col md="6">
                         <Image id="img" src="images/frontpage_mirage.png" fluid="true"></Image>
                     </Col>
-                    <Col className="d-flex align-items-center text-center" md="6" fluid="true">
+                    <Col className="d-flex align-items-center text-center" md="6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Integer ut auctor nisl. Sed accumsan placerat dignissim. 
                     Quisque iaculis sodales lacus vel accumsan. Curabitur blandit id sem consequat eleifend. 

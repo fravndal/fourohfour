@@ -1,0 +1,74 @@
+* {
+    color: #FFF;
+    font-weight: 400;
+}
+
+
+body, #navbar {
+    background: url("/images/background/background_4k.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width: 1900px){
+    #container-map {
+        padding-top: 3em;
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    #container-map {
+        padding-top: 5em;
+    }
+}
+
+
+@media screen and (min-width: 2100px){
+    #container-map {
+        padding-top: 10em;
+    }
+    #img-map {
+        height: 80%;
+        width: 90%;
+    }
+}
+
+/* Increase images on 4k */
+@media screen and (min-width: 2500px){
+
+}
+
+/* Background image for 1440p */
+@media screen and (min-width: 1440px) and (max-width: 1900px){
+    body, #navbar {
+        background: url("/images/background/background_1440p.jpg");
+        background-size: cover;
+    }
+}
+
+/* Background image for 1024p */
+@media screen and (min-width: 1024px) and (max-width: 1430px){
+    body, #navbar {
+        background: url("/images/background/background_1024.jpg");
+        background-size: cover;
+    }
+}
+
+/* Background image for tablet */
+@media screen and (min-width: 768px) and (max-width: 1420px){
+    body, #navbar {
+        background: url("/images/background/background_tablet-big.jpg");
+        background-size: cover;
+    }
+}
+
+/* Background image for phone */
+@media screen and (max-width: 767px) and (max-width: 1600px){
+    body, #navbar {
+        background: url("/images/background/background_phone.jpg");
+        background-size: cover;
+    }
+}
+

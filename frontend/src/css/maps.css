@@ -10,7 +10,7 @@
 }
 
 #imageDisabled {
-    opacity: 50%;
+    opacity: 30%;
     box-shadow: 7px 7px 10px .5px #242424;
 }
 
@@ -39,7 +39,20 @@
 
 @media screen and (max-height: 800px) {
     #container {
-        margin-top: 0em;
+        margin-top: -1em;
     }
 }
+
+
+@media screen and (min-width: 2500px) {
+    #container {
+        margin-top: 8em;
+    }
+
+    #image, #image2, #imageDisabled {
+        width: 90%;
+        height: 100%;
+    }
+}
+
 
